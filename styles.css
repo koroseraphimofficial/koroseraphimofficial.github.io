@@ -1,0 +1,142 @@
+:root {
+  --navy: #1f2a44;
+  --gold: #c9a227;
+  --paper: #f7f4ec;
+  --ink: #1c2230;
+  --muted: #4e5668;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.site-header {
+  background: var(--navy);
+  border-bottom: 4px solid var(--gold);
+  padding: 1rem 1.25rem;
+}
+
+.wordmark {
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.wordmark:hover {
+  color: #fff;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.25rem 1.25rem 3rem;
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  color: var(--navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.85rem, 5vw, 2.5rem);
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+}
+
+h2 {
+  margin: 1.85rem 0 0.4rem;
+  color: var(--navy);
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+p,
+ul {
+  margin: 0.6rem 0;
+}
+
+.lede {
+  margin-top: 0;
+  font-size: 1.125rem;
+}
+
+.updated {
+  margin-top: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+a {
+  color: var(--navy);
+  overflow-wrap: anywhere;
+}
+
+main a {
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: #7a6114;
+}
+
+.links,
+.social {
+  padding: 0;
+  list-style: none;
+}
+
+.links li,
+.social li {
+  margin: 0.35rem 0;
+}
+
+.site-footer {
+  background: var(--navy);
+  border-top: 4px solid var(--gold);
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.site-footer a {
+  color: var(--gold);
+  display: inline-block;
+  padding: 0.35rem 0;
+  text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a[aria-current="page"] {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 0.2em;
+}
